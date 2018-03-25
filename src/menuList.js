@@ -23,7 +23,7 @@ export default class MenuList extends React.Component {
             return time+ ' minutes';
         }
     }
-    
+
     renderList(cook) {
        // return this.state.cooking.map((cook, index) => {
            return (
