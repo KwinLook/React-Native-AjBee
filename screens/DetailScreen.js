@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from '../src/header';
+
 export default class DetailScreen extends React.Component {
  constructor(){
  super();

@@ -1,19 +1,23 @@
 import React from 'react';
-import {StackNavigator} from 'react-navigation';
-import HomeScreen from './screens/HomeScreen';
-import DetailScreen from './screens/DetailScreen';
-
-export default class App extends React.Component {
-  render() {
-    return (<RootStack/>);
-  }
-}
+import { StackNavigator } from 'react-navigation';
+import HomeScreen from './screen/HomeScreen';
+import DetailScreen from './screen/DetailScreen';
 
 const RootStack = StackNavigator({
   Home: {
     screen: HomeScreen
   },
-  Details: {
+  Detail: {
     screen: DetailScreen
+  },
+},
+  {
+    initialRouteName: 'Home',
   }
-}, {initialRouteName: 'Details'});
+);
+
+export default class App extends React.Component {
+  render() {
+    return <RootStack />
+  }
+}
